@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// Gin, Middleware, JWT, Redis, PostgreSQL, Ent Alternatifi bul
+// Gin, Middleware, JWT, Redis, PostgreSQL, Ent Alternatifi bul GORM?
 type Person struct {
 	Name string
 	Age  int

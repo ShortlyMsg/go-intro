@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 )
@@ -21,7 +21,7 @@ func main() {
 	}
 
 	if response.StatusCode == 200 {
-		data, _ := ioutil.ReadAll(response.Body)
+		data, _ := io.ReadAll(response.Body)
 		fmt.Println(string(data))
 
 		var apiResponse ApiResponse
